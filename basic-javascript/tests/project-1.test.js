@@ -278,8 +278,8 @@ describe('Project-1 Functions', () => {
 			assert.equal(roundUp(10.7), 11);
 		});
 		it('should return a number', () => {
-			const roundNumber = funcs.roundNumber;
-			assert.typeOf(roundNumber(11), 'number');
+			const roundUp = funcs.roundUp;
+			assert.typeOf(roundUp(11), 'number');
 		});
 	});
 
@@ -320,11 +320,11 @@ describe('Project-1 Functions', () => {
 		});
 		it('should return  "Jones"', () => {
 			const getGreeting = funcs.getGreeting;
-			assert.equal(getGreeting("Travis", "Jones"), "Travis Jones");
+			assert.equal(getGreeting("Travis"), "Hello Travis!");
 		});
 		it('should return a string', () => {
 			const getGreeting = funcs.getGreeting;
-			assert.typeOf(getGreeting("Travis", "Jones"), 'string');
+			assert.typeOf(getGreeting("Travis"), 'string');
 		});
 	});
 
@@ -332,6 +332,14 @@ describe('Project-1 Functions', () => {
 		it('should be a function', () => {
 			const getRectangleArea = funcs.getRectangleArea;
 			assert.typeOf(getRectangleArea, 'function');
+		});
+		it('should return true if passed 3 and 4 and equals 12', () => {
+			const getRectangleArea = funcs.getRectangleArea;
+			assert.equal(getRectangleArea(3, 4), 12);
+		});
+		it('should return a number', () => {
+			const getRectangleArea = funcs.getRectangleArea;
+			assert.typeOf(getRectangleArea(3,4), 'number');
 		});
 	});
 
