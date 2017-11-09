@@ -67,11 +67,11 @@ const square = (num) => {
 };
 
 const cube = (num) => {
-  return num * num * num;
+  return Math.pow(num, 3);
 };
 
 const raiseToPower = (num, exponent) => {
-  return num ** exponent;
+  return Math.pow(num, exponent);
 };
 
 const roundNumber = (num) => {
